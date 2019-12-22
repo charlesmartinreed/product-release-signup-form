@@ -47,7 +47,7 @@ html {
 .container-left p {
   font-weight: 500;
   text-transform: uppercase;
-  color: var(--clr-font-supplementary);
+  color: rgb(26, 26, 35);
   margin-bottom: 5rem;
 }
 
@@ -74,8 +74,7 @@ html {
 .container-right .flavor-text-container .flavor-header {
   font-size: 1.9rem;
   color: var(--clr-off-white);
-  font-weight: 800;
-  text-align: center;
+  font-weight: 300;
 }
 
 .container-right .flavor-text-container .flavor-header:last-of-type {
@@ -91,6 +90,7 @@ html {
 .form-container {
   height: 50%;
   width: 100%;
+
   padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
@@ -101,41 +101,39 @@ html {
 .container-right .form-header {
   font-size: 1.6rem;
   color: var(--clr-off-white);
-  font-weight: 800;
+  font-weight: 300;
   margin-bottom: 1.3rem;
-  text-align: center;
 }
 
 .form-container input,
 .form-container textarea {
-  width: 90%;
-  border: none;
+  border: 1px solid rgb(15, 15, 15);
+  background: rgb(26, 26, 35);
   outline: none;
   border-radius: 3px;
   padding-left: 0.6rem;
+  color: var(--clr-off-white);
 }
 
 .form-container input {
+  width: 50%;
   height: 40px;
   margin-bottom: 0.5rem;
   font-size: 0.8rem;
 }
 
 .form-container textarea {
-  width: 90%;
+  width: 50%;
   height: 120px;
   font-size: 0.9rem;
   padding-top: 0.6rem;
   margin-bottom: 0.5rem;
 }
 
-.form-container input:focus-within {
-}
-
 .form-container button[type="submit"] {
   border: none;
   padding: 0.4rem 3rem;
-  color: var(--clr-off-white);
+  color: rgb(15, 15, 15);
   background-color: var(--clr-font-main);
   font-size: 1rem;
   font-weight: 700;
