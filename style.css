@@ -58,7 +58,7 @@ html {
 
 .container-right {
   background-color: rgb(26, 26, 35);
-  /* background: blue; */
+  overflow-y: auto;
 }
 
 .container-right .flavor-text-container {
@@ -149,6 +149,7 @@ html {
   letter-spacing: 0.15rem;
   cursor: pointer;
   border-radius: 3px;
+  margin-bottom: 1rem;
 }
 
 .form-container button[type="submit"]:focus-within {
@@ -157,6 +158,13 @@ html {
   animation-timing-function: linear;
   animation-direction: alternate;
   animation-iteration-count: 4;
+}
+
+#recaptcha-div {
+  background-color: transparent;
+  height: 78px;
+  width: 304px;
+  margin: 1rem auto;
 }
 
 @keyframes shake {
