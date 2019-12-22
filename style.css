@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-font-main: #6d75c0;
+  --clr-font-supplementary: #7e1b25;
+  --clr-off-white: rgb(233, 233, 248);
+}
+
+body {
+  display: flex;
+  overflow: hidden;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  width: 50%;
+  color: var(--clr-font-supplementary);
+}
+
+.container-left {
+  background-color: var(--clr-off-white);
+  color: var(--clr-font-main);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-left h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+}
+
+.container-left p {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--clr-font-supplementary);
+  margin-bottom: 5rem;
+}
+
+.container-left svg {
+  height: 500px;
+  width: 500px;
+}
+
+.container-right {
+  background-color: rgb(26, 26, 35);
+  /* background: blue; */
+}
+
+.container-right .flavor-text-container {
+  margin-top: 1rem;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
+}
+
+.container-right .flavor-text-container .flavor-header {
+  font-size: 1.9rem;
+  color: var(--clr-off-white);
+  font-weight: 800;
+  text-align: center;
+}
+
+.container-right .flavor-text-container .flavor-header:last-of-type {
+  margin-bottom: 1.3rem;
+}
+
+.container-right .flavor-text-container .flavor-body {
+  line-height: 1.5rem;
+  font-weight: 300;
+  width: 80%;
+}
+
+.form-container {
+  height: 50%;
+  width: 100%;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.container-right .form-header {
+  font-size: 1.6rem;
+  color: var(--clr-off-white);
+  font-weight: 800;
+  margin-bottom: 1.3rem;
+  text-align: center;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 90%;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding-left: 0.6rem;
+}
+
+.form-container input {
+  height: 40px;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.form-container textarea {
+  width: 90%;
+  height: 120px;
+  font-size: 0.9rem;
+  padding-top: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-container input:focus-within {
+}
+
+.form-container button[type="submit"] {
+  border: none;
+  padding: 0.4rem 3rem;
+  color: var(--clr-off-white);
+  background-color: var(--clr-font-main);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
