@@ -63,7 +63,8 @@ html {
 
 .container-right .flavor-text-container {
   margin-top: 1rem;
-  height: 50%;
+  margin-bottom: 3.5rem;
+  max-height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,6 +97,8 @@ html {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+
+  position: relative;
 }
 
 .container-right .form-header {
@@ -149,7 +152,11 @@ html {
   letter-spacing: 0.15rem;
   cursor: pointer;
   border-radius: 3px;
-  margin-bottom: 1rem;
+
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .form-container button[type="submit"]:focus-within {
@@ -177,5 +184,21 @@ html {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 915px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  .container {
+    min-height: 50vh;
+    width: 100%;
+  }
+
+  .container-left svg {
+    height: 400px;
+    width: 400px;
+    margin-bottom: 1rem;
+  }
 }
